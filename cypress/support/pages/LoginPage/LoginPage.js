@@ -17,6 +17,7 @@ class LoginPage{
         cy.get(el.campo_botao_login).click();
     }
 
+    //include funciona para URL, enquanto o contain não, o contain so funciona para elementos DOM, como <span>, <div>, <h1>, etc...
     verificarLoginSucesso(){
         cy.url().should('include', '/inventory.html')
         cy.get(el.titulo_pagina_inicial).should('have.text', 'Products')
