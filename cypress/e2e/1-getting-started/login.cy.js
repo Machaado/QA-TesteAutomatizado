@@ -14,7 +14,7 @@ describe('Fluxo de compra no site', () => {
   })
 })
 
-//Mesma coisa do de cima, ele insere como usuario 'standard_user' e como senha 'secret_sauce', clica em logar e verifica se logou. A diferença é que estamos usando Fixtures vindo de fixtures/profile.json
+///Mesma coisa do de cima, ele insere como usuario 'standard_user' e como senha 'secret_sauce', clica em logar e verifica se logou. A diferença é que estamos usando Fixtures vindo de fixtures/profile.json
 describe('Fluxo de compra no site', () => {
   it('Usuário deve logar com sucesso e adicionar produto ao carrinho', () => {
     cy.fixture('profile').then((prof) => {
