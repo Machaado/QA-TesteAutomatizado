@@ -29,6 +29,9 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'cypress\\videos\\**\\*.mp4', allowEmptyArchive: true
             archiveArtifacts artifacts: 'cypress\\screenshots\\**\\*.png', allowEmptyArchive: true
+            
+            // Reportando build info para o Jira
+            jiraSendBuildInfo site: 'primeira_conexao_jira_com_jenkins'
         }
     }
 }
