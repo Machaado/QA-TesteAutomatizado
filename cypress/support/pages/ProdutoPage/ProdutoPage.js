@@ -1,18 +1,20 @@
+import { elements as el } from "./elements";
+
 class ProdutoPage {
 
     adicionarProdutoAoCarrinho(produtoNome){
-        cy.contains('.inventory_item_name', produtoNome)
-        .parents('.inventory_item')
-        .find('button')
+        cy.contains(el.nome_item, produtoNome)
+        .parents(el.item_pai)
+        .find(el.botao_add_prod_ao_carrinho)
         .click();
     }
 
     verificarProdutoAdicionadoCarrinho(){
-        cy.get('[data-test="shopping-cart-badge"]').should('be.visible').and('have.text', 1)
+        cy.get(el.carrinho_icone_disponivel).should('be.visible').and('have.text', 1)
     }
 
     irParaCarrinho(){
-        cy.get('.shopping_cart_link').click();
+        cy.get(el.ir_ao_carrinho).click();
     }
 }
 

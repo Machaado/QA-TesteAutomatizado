@@ -1,7 +1,9 @@
+import { elements as el } from "./elements";
+
 class CarrinhoPage {
 
     validarProdutoNoCarrinho(produtoNome){
-        cy.get('.cart_item').should('contain', produtoNome);
+        cy.get(el.carrinho_icone).should('contain', produtoNome);
     }
 
 
