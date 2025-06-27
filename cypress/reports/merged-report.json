@@ -1,0 +1,299 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-06-27T03:07:26.428Z",
+    "end": "2025-06-27T03:07:37.372Z",
+    "duration": 10944
+  },
+  "results": [
+    {
+      "uuid": "2fc13491-400f-4799-bff7-a7ce3f4ef470",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\login.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1cdaa3d-c273-44c3-a311-23ee59eb939d",
+          "title": "Fluxo de compra no site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Usuário deve logar com sucesso e adicionar produto ao carrinho",
+              "fullTitle": "Fluxo de compra no site Usuário deve logar com sucesso e adicionar produto ao carrinho",
+              "timedOut": null,
+              "duration": 929,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//LoginPage.visit();\n_LoginPage.default.preencherUsuario('standard_user');\n_LoginPage.default.preencherSenha('secret_sauce');\n_LoginPage.default.clicarLogin();\n_LoginPage.default.verificarLoginSucesso();",
+              "err": {},
+              "uuid": "58b4a64e-8c94-41a7-967a-380cf482a422",
+              "parentUUID": "e1cdaa3d-c273-44c3-a311-23ee59eb939d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58b4a64e-8c94-41a7-967a-380cf482a422"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b9f7bd8c-1321-4b7d-ac25-47962dc32a57",
+          "title": "Fluxo de compra no site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Usuário deve logar com sucesso e adicionar produto ao carrinho",
+              "fullTitle": "Fluxo de compra no site Usuário deve logar com sucesso e adicionar produto ao carrinho",
+              "timedOut": null,
+              "duration": 870,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('profile').then(prof => {\n  _LoginPage.default.preencherUsuario(prof.username);\n  _LoginPage.default.preencherSenha(prof.password);\n  _LoginPage.default.clicarLogin();\n  _LoginPage.default.verificarLoginSucesso();\n});",
+              "err": {},
+              "uuid": "00637e57-43ea-4a26-b188-e522f10af0f6",
+              "parentUUID": "b9f7bd8c-1321-4b7d-ac25-47962dc32a57",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "00637e57-43ea-4a26-b188-e522f10af0f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 870,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "686b042b-c388-4410-a57e-9f58f506faef",
+          "title": "Fluxo de compra no site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Usuário deve ter o login falhado",
+              "fullTitle": "Fluxo de compra no site Usuário deve ter o login falhado",
+              "timedOut": null,
+              "duration": 830,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//LoginPage.visit();\n_LoginPage.default.preencherUsuario('usuario_invalido');\n_LoginPage.default.preencherSenha('senha_invalida');\n_LoginPage.default.clicarLogin();\n_LoginPage.default.verificarLoginFalha();",
+              "err": {},
+              "uuid": "f27ce6a3-de45-4072-b0a6-9cd75a329dac",
+              "parentUUID": "686b042b-c388-4410-a57e-9f58f506faef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f27ce6a3-de45-4072-b0a6-9cd75a329dac"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 830,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cd44c118-6194-4039-b79d-925b6c88808b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\produto.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\produto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8fb73134-e391-4cf6-af0c-3c5b849736c0",
+          "title": "Adicionar produto ao carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve adicionar produto ao carrinho com sucesso",
+              "fullTitle": "Adicionar produto ao carrinho Deve adicionar produto ao carrinho com sucesso",
+              "timedOut": null,
+              "duration": 1048,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProdutoPage.default.adicionarProdutoAoCarrinho('Sauce Labs Backpack');\n_ProdutoPage.default.verificarProdutoAdicionadoCarrinho();",
+              "err": {},
+              "uuid": "cdbee92a-ba1c-4437-bc2c-41ee6eae1be8",
+              "parentUUID": "8fb73134-e391-4cf6-af0c-3c5b849736c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cdbee92a-ba1c-4437-bc2c-41ee6eae1be8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1048,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "65353431-d607-4f45-861c-1be02eedd14e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\carrinho.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\carrinho.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3e959ab-e8af-4700-a85d-26f83ccd4075",
+          "title": "Validação de produto no carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve conter o produto correto no carrinho",
+              "fullTitle": "Validação de produto no carrinho Deve conter o produto correto no carrinho",
+              "timedOut": null,
+              "duration": 1933,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_CarrinhoPage.default.validarProdutoNoCarrinho('Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "da6e07ae-4f7d-4fce-8c2f-1790e01cbbbe",
+              "parentUUID": "a3e959ab-e8af-4700-a85d-26f83ccd4075",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da6e07ae-4f7d-4fce-8c2f-1790e01cbbbe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1933,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
