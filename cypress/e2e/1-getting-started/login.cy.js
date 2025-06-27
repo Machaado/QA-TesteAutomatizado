@@ -29,7 +29,7 @@ describe('Fluxo de compra no site', () => {
 
 describe('Fluxo de compra no site', () => {
   it('Usuário deve ter o login falhado', () => {
-    //LoginPage.visit();
+    ///LoginPage.visit();
     LoginPage.preencherUsuario('usuario_invalido');
     LoginPage.preencherSenha('senha_invalida');
     LoginPage.clicarLogin();
